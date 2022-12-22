@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Demo1Application {
     @GetMapping("/hello")
-	public String get(){
+	public String get1(){
 		return "hello user !!!";
+	}
+	@GetMapping("/hello1")
+	public String get2(){
+		return "hello user 1 !!!";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(Demo1Application.class, args);
